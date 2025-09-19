@@ -1,0 +1,8 @@
+IF
+  Global("dd3311","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("slilmat",[434.296],4)
+    SetGlobal("dd3311","GLOBAL",1)
+END
+

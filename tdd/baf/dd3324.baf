@@ -1,0 +1,10 @@
+IF
+  Global("dd3324","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("3324nob1",[460.516],4)
+    CreateCreature("3324nob2",[665.531],4)
+    CreateCreature("3324nob3",[534.177],4)
+    SetGlobal("dd3324","GLOBAL",1)
+END
+

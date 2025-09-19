@@ -1,0 +1,50 @@
+IF
+        !Global("KivanPartyBG1","GLOBAL",1)
+	Global("#HTDDKivan","GLOBAL",0)
+	LevelLT(Player1,11)
+THEN
+	RESPONSE #100
+		SetGlobal("#HTDDKivan","GLOBAL",1)
+		CreateCreature("KIVAN10",[4172.1239],0) // Kivan
+END
+
+IF
+        !Global("KivanPartyBG1","GLOBAL",1)
+	Global("#HTDDKivan","GLOBAL",0)
+	LevelGT(Player1,10)
+	LevelLT(Player1,14)
+THEN
+	RESPONSE #100
+		SetGlobal("#HTDDKivan","GLOBAL",1)
+		CreateCreature("KIVAN12",[4172.1239],0) // Kivan
+END
+
+IF
+        !Global("KivanPartyBG1","GLOBAL",1)
+	Global("#HTDDKivan","GLOBAL",0)
+	LevelGT(Player1,13)
+THEN
+	RESPONSE #100
+		SetGlobal("#HTDDKivan","GLOBAL",1)
+		CreateCreature("KIVAN13",[4172.1239],0) // Kivan
+END
+
+IF
+	Global("jarlaxe1home","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Explore()
+		CreateCreature("jarlboy",[4167.1001],4) // Branden
+		SetGlobal("jarlaxe1home","GLOBAL",3)
+END
+
+IF
+	Global("adventureboy","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("adventureboy","GLOBAL",1)
+		CreateCreatureObjectOffScreen("dinanmum",Player1,0,0,0) // Johanna
+		ActionOverride("dinanmum",StartDialogueNoSet(Player1))
+END
+
+

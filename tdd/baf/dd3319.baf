@@ -1,0 +1,23 @@
+IF
+  Global("DD3319","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("bgshbad1",[282.555],4)
+    CreateCreature("bgshbad2",[403.716],4)
+    CreateCreature("bgshbad3",[459.618],4)
+    CreateCreature("bgshbad4",[740.612],4)
+    CreateCreature("bgshbad5",[410.431],4)
+    CreateCreature("bgshbad6",[357.479],4)
+    CreateCreature("bgshboss",[709.486],4)
+    SetGlobal("DD3319","GLOBAL",1)
+END
+
+IF
+  Global("bgenchant","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("bgenchant","GLOBAL",2)
+    StartCutSceneMode()
+    StartCutScene("cutencht")
+END
+

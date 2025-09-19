@@ -1,0 +1,10 @@
+IF
+  Global("fleeques","GLOBAL",0)
+  See([PC])
+  Range([PC],25)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("fleeques","GLOBAL",1)
+END
+

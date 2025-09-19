@@ -1,0 +1,8 @@
+IF
+  Global("DD2016","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("pkstore2",[417.369],4)
+    SetGlobal("DD2016","GLOBAL",1)
+END
+

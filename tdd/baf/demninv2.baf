@@ -1,0 +1,10 @@
+IF
+  Global("demninv2","GLOBAL",0)
+  See([PC])
+  Range([PC],25)
+THEN
+  RESPONSE #100
+    StartDialogue("demninv2",Player1)
+    SetGlobal("demninv2","GLOBAL",1)
+END
+

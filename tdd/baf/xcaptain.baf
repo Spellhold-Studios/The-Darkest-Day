@@ -1,0 +1,10 @@
+IF
+  Global("xcapsee","GLOBAL",0)
+  See([PC])
+  Range([PC],20)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("xcapsee","GLOBAL",1)
+END
+

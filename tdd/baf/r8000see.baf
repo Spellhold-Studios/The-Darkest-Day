@@ -1,0 +1,10 @@
+IF
+  Global("r80001see","GLOBAL",0)
+  See([PC])
+  Range([PC],20)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("r80001see","GLOBAL",1)
+END
+

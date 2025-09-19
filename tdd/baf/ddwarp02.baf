@@ -1,0 +1,11 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateCreatureObjectOffset("DDwarp01",Myself,[35.35])
+    Wait(2)
+    ActionOverride("DDwarp01",StartDialogue("DDwarp01",Player1))
+    EndCutSceneMode()
+END
+

@@ -1,0 +1,44 @@
+The Darkest Day
+
+
+
+Nachdem DSotSC (Die Dunkle Seite der Schwertküste ist ebenfalls auf deutsch!) als erster Mod für BG1 erschienen war, wurde im Jahr 2001 als erster Mod für BG2 TDD veröffentlicht.
+Seither gab es immer wieder Versuche, TDD ins Deutsche zu übersetzen, die leider immer wieder einschliefen. Die bis dahin erarbeiteten Dateien waren inzwischen wieder verschollen.
+
+2001 unternahmen Dragonheart, Doc Sternau und Caswallon einen Anlauf, den Mod zu übersetzen. Sie hatten die Kits bereits vollständig übersetzt und auch einen Teil der Zauberbeschreibungen. Zum Glück hatten sie die Dateien noch aufbewahrt. Da der Mod selbst zwischenzeitlich verändert wurde, musste ich auch die noch vorhandene Dateien alle nochmals überarbeiten.
+
+Jetzt, 6 Jahre später, ist es endlich soweit: 
+
+Zusammen mit Gerri habe ich unter Verwendung oben erwähnter Textfragmente im ersten Halbjahr 2007 den Mod übersetzt. Jetzt endlich könnt Ihr diesen großartigen Mod in deutsch erleben!
+
+
+Viel Spass dabei!
+
+
+Dutzende von weiteren Übersetzungen könnt Ihr hier herunterladen: http://wmtp.dotnull.de/complete.php
+
+
+
+Leonardo Watson
+Juni 2007
+
+
+
+
+
+I. INSTALLATION
+
+1. Macht eine Datensicherung von Eurem override-Ordner und der DIALOG.TLK-Datei aus Eurem BG2 Hauptverzeichnis.
+2. Entpackt dias heruntergeladene Archiv im BG2 Hauptordner.
+3. Wenn es keine WeiDU.LOG Datei in Eurem BG2 Hauptverzeichnis gibt, erstellt dort bitte eine neue WeiDU.LOG Datei.
+4. Startet die Setup-TDD.EXE Datei.
+5. Folgt den Anweisungen auf dem Bildschirm.
+
+Ihr könnt dabei wahlweise die "TDD Charakter Kits" installieren. TDD würde alle verfügnaren Plätze für Klassen-Charaktere (Kits) belegen, so dass keine weiteren Kits intalliert werden könnten. Überspringt diesen Punkt, wenn Ihr noch weitere Kits (z. B. aus RoT) installieren wollt. Ihr könnt die TDD Charakter Kits zu einem späteren Zeitpunkt immer noch installieren.
+
+
+II. DEINSTALLATION
+
+1. Startet die Setup-TDD.EXE Datei.
+2. Folgt den Anweisungen auf dem Bildschirm.
+3. Wenn Ihr zu einem absolut sauberen Zustand vor der Installation zurückkehren wollt, löscht bitte Euren override-Ordner und die DIALOG.TLK Dateien und kopiert dann  Eure Sicherungskopien ins BG2 Hauptverzeichnis. Entfernt dann die SETUP-TDD.DEBUG Datei. Öffnet anschließendh Eure WeiDU.log Datei mit einem Texteditor und entfernt die vom TDD Installer erzeugten Zeilen.

@@ -1,0 +1,9 @@
+IF
+  Global("trollguts","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("trollguts","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+

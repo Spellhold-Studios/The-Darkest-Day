@@ -1,0 +1,17 @@
+IF
+  Global("pkmess2","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogNoSet([PC])
+    SetGlobal("pkmess2","GLOBAL",1)
+END
+
+IF
+  Global("pkmessrun","GLOBAL",10)
+THEN
+  RESPONSE #100
+    EscapeArea()
+    SetGlobal("pkmessrun","GLOBAL",11)
+END
+

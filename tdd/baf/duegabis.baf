@@ -1,0 +1,48 @@
+IF
+  See([PC])
+  Range([PC],20)
+  Global("duegabistalk","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("duegabistalk","GLOBAL",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),15)
+  Global("duegabisa","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_FIREBALL)
+    SetGlobal("duegabisa","GLOBAL",1)
+END
+
+IF
+  HPLT(Myself,30)
+  Global("duegabisb","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_HASTE)
+    ApplySpell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)
+    SetGlobal("duegabisb","GLOBAL",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  Global("duegabisc","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_WISH)
+    SetGlobal("duegabisc","GLOBAL",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(NearestEnemyOf(Myself))
+END
+

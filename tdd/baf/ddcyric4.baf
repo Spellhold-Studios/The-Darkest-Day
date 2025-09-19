@@ -1,0 +1,78 @@
+IF
+  Global("prep","LOCALS",0)
+  Detect(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    GiveItemCreate("POTN10",Myself,2,0,0)  // ~Potion of Invisibility~
+    ApplySpell(Myself,CLERIC_IRONSKIN)
+    Wait(1)
+    UseItem("POTN10",Myself)  // ~Potion of Invisibility~
+    Wait(1)
+    ApplySpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)
+    SetGlobal("prep","LOCALS",1)
+END
+
+IF
+  See([GOODCUTOFF])
+  GlobalLT("CreepingDoom","LOCALS",2)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_CREEPING_DOOM)
+    IncrementGlobal("CreepingDoom","LOCALS",1)
+    Wait(1)
+    Continue()
+END
+
+IF
+  See([GOODCUTOFF])
+  GlobalLT("Earthquake","LOCALS",1)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_EARTHQUAKE)
+    IncrementGlobal("Earthquake","LOCALS",1)
+    Wait(1)
+    Continue()
+END
+
+IF
+  See([GOODCUTOFF])
+  GlobalLT("Silence","LOCALS",1)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)
+    IncrementGlobal("Silence","LOCALS",1)
+    Wait(1)
+    Continue()
+END
+
+IF
+  See([GOODCUTOFF])
+  GlobalLT("SymbolOfBanishment","LOCALS",2)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_STUN)
+    IncrementGlobal("SymbolOfBanishment","LOCALS",1)
+    Wait(1)
+    Continue()
+END
+
+IF
+  See([GOODCUTOFF])
+  GlobalLT("DietyBind","LOCALS",1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,NPC_BLADE_BARRIER)
+    IncrementGlobal("DeityBind","LOCALS",1)
+    Wait(1)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

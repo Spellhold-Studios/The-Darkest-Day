@@ -1,0 +1,32 @@
+IF
+  Global("DD1200","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("DEADB03",[310.557],4)  // ~Adventurer~
+    CreateCreature("DEADB03",[549.471],4)  // ~Adventurer~
+    CreateCreature("DEADB03",[472.326],4)  // ~Adventurer~
+    CreateCreature("DEADB03",[733.504],4)  // ~Adventurer~
+    CreateCreature("DEADB03",[763.655],4)  // ~Adventurer~
+    CreateCreature("wolfget",[755.860],4)  //
+    SetGlobal("DD1200","GLOBAL",1)
+END
+
+IF
+  Dead("wolfget")  
+  Global("wolfget","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("wolfget","GLOBAL",1)
+END
+
+IF
+  Global("wolfget","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Player1,@10093)
+    Wait(1)
+    StartCutSceneMode()
+    StartCutScene("wolfleft")
+    SetGlobal("wolfget","GLOBAL",2)
+END
+

@@ -1,0 +1,9 @@
+IF
+  Global("dd3330","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("3305pes1",[215.428],4)
+    CreateCreature("3305pes2",[499.365],4)
+    SetGlobal("dd3330","GLOBAL",1)
+END
+

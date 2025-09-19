@@ -1,0 +1,8 @@
+IF
+  Global("dd3307","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("3307wiz",[421.327],4)
+    SetGlobal("dd3307","GLOBAL",1)
+END
+

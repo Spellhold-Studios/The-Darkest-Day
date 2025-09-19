@@ -1,0 +1,7 @@
+IF
+  Global("barbhelp","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

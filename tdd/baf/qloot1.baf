@@ -1,0 +1,9 @@
+IF
+  See([PC])
+  Global("qloot1see","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("qloot1see","LOCALS",1)
+END
+

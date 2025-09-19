@@ -1,0 +1,10 @@
+IF
+  Global("avbat2ee","LOCALS",0)
+  See([PC])
+  Range([PC],30)
+THEN
+  RESPONSE #100
+    SetGlobal("avbat2ee","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+

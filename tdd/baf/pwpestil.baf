@@ -1,0 +1,30 @@
+IF
+	Global("PWFix","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PWFix","LOCALS",1)
+END
+
+IF
+	CheckStatLT(Myself,3,STR)
+THEN
+	RESPONSE #100
+		SpellNoDec(Myself,COM_PRIEST_BULLS_STRENGTH)
+END
+
+IF
+	CheckStatLT(Myself,3,DEX)
+THEN
+	RESPONSE #100
+		SpellNoDec(Myself,WIZARD_CATS_GRACE)
+END
+
+IF
+	GlobalTimerExpired("PWFix","LOCALS")
+	Global("PWFix","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("PWFix","LOCALS",0)
+		ChangeAIScript("",OVERRIDE)
+END
+

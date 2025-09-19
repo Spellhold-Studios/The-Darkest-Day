@@ -1,0 +1,27 @@
+IF
+  HasItemEquipedReal("flamplat",Myself)
+  Range(NearestEnemyOf(Myself),5)
+  HitBy([ENEMY],SLASHING)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(LastAttackerOf(Myself),PLATE_OF_SMOLDERING)
+END
+
+IF
+  HasItemEquipedReal("flamplat",Myself)
+  Range(NearestEnemyOf(Myself),5)
+  HitBy([ENEMY],CRUSHING)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(LastAttackerOf(Myself),PLATE_OF_SMOLDERING)
+END
+
+IF
+  HasItemEquipedReal("flamplat",Myself)
+  Range(NearestEnemyOf(Myself),5)
+  HitBy([ENEMY],PIERCING)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(LastAttackerOf(Myself),PLATE_OF_SMOLDERING)
+END
+

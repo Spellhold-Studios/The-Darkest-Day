@@ -1,0 +1,606 @@
+IF
+  Global("player1_is_antipaladin","GLOBAL",1)
+  !Reputation(Player1,10)
+THEN
+  RESPONSE #100
+    ReputationSet(10)
+END
+
+IF
+  HasItem("kibaday",Player1)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player1)
+END
+
+IF
+  HasItem("kibaday",Player2)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player2)
+END
+
+IF
+  HasItem("kibaday",Player3)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player3)
+END
+
+IF
+  HasItem("kibaday",Player4)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player4)
+END
+
+IF
+  HasItem("kibaday",Player5)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player5)
+END
+
+IF
+  HasItem("kibaday",Player6)
+  OR(2)
+    TimeOfDay(DUSK)
+    TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaxx","kibaday",Player6)
+END
+
+IF
+  HasItem("kibaxx",Player1)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player1)
+END
+
+IF
+  HasItem("kibaxx",Player2)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player2)
+END
+
+IF
+  HasItem("kibaxx",Player3)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player3)
+END
+
+IF
+  HasItem("kibaxx",Player4)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player4)
+END
+
+IF
+  HasItem("kibaxx",Player5)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player5)
+END
+
+IF
+  HasItem("kibaxx",Player6)
+  OR(2)
+    TimeOfDay(DAY)
+    TimeOfDay(MORNING)
+THEN
+  RESPONSE #100
+    TakeItemReplace("kibaday","kibaxx",Player6)
+END
+
+IF
+  Global("m2spawnhelpneeded","GLOBAL",1)
+  CombatCounter(0)
+  PartyRested()
+THEN
+  RESPONSE #100
+    CreateCreatureOffScreen("m2guard2",0)
+    SetGlobal("m2spawnhelpneeded","GLOBAL",2)
+END
+
+IF
+  PartyHasItem("mintgoH")
+  PartyHasItem("mintgolA")
+  PartyHasItem("mintgolR")
+  PartyHasItem("mintgolB")
+  PartyHasItem("mintgolS")
+THEN
+  RESPONSE #100
+    TakePartyItem("mintgoH")
+    TakePartyItem("mintgolA")
+    TakePartyItem("mintgolR")
+    TakePartyItem("mintgolB")
+    TakeItemReplace("mintgolF","mintgolS",Player1)
+    DisplayStringHead(Player1,@10204)
+END
+
+IF
+  Global("bgarival","GLOBAL",3)
+  GlobalTimerExpired("RiatavinPlague","GLOBAL")
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("Riatplag")
+    SetGlobal("bgarival","GLOBAL",4)
+END
+
+IF
+  Global("riatslay","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("riatslay")
+    SetGlobal("riatslay","GLOBAL",2)
+END
+
+IF
+  CombatCounter(0)
+  Global("DD_KEEP_PLOT","GLOBAL",1)
+  GlobalTimerExpired("DDPLOTA1_entry","GLOBAL")
+  OR(2)
+    AreaType(CITY)
+    AreaType(FOREST)
+THEN
+  RESPONSE #100
+    SetGlobal("DD_KEEP_PLOT","GLOBAL",2)
+    SetGlobalTimer("DDPLOTA2_entry","GLOBAL",TWO_DAYS)
+    CreateCreatureObjectOffset("DDPLOTA1",Player1,[1000.1000])
+  RESPONSE #100
+    SetGlobal("DD_KEEP_PLOT","GLOBAL",2)
+    SetGlobalTimer("DDPLOTA2_entry","GLOBAL",TWO_DAYS)
+    CreateCreatureObjectOffset("DDPLOTA1",Player1,[-1000.-1000])
+  RESPONSE #100
+    SetGlobal("DD_KEEP_PLOT","GLOBAL",2)
+    SetGlobalTimer("DDPLOTA2_entry","GLOBAL",TWO_DAYS)
+    CreateCreatureObjectOffset("DDPLOTA1",Player1,[-1000.1000])
+  RESPONSE #100
+    SetGlobal("DD_KEEP_PLOT","GLOBAL",2)
+    SetGlobalTimer("DDPLOTA2_entry","GLOBAL",TWO_DAYS)
+    CreateCreatureObjectOffset("DDPLOTA1",Player1,[1000.-1000])
+END
+
+IF
+  Global("artraise","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("artjarlrise","GLOBAL",ONE_DAY)
+    SetGlobal("artraise","GLOBAL",2)
+END
+
+IF
+  Global("risetimex","GLOBAL",0)
+  GlobalTimerExpired("artjarlrise","GLOBAL")
+THEN
+  RESPONSE #100
+    FadeToColor([20.0],0)
+    Wait(2)
+    SetGlobal("risetimex","GLOBAL",1)
+    StartCutSceneMode()
+    StartCutScene("raiseart")
+END
+
+IF
+  HasItemEquiped("DDves01",Player1)
+  !Name("vesine",Player1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player1,PickUpItem("DDves01"))
+    ApplyDamage(Player1,15,ELECTRICITY)
+    ApplyDamage(Player1,5,COLD)
+END
+
+IF
+  HasItemEquiped("DDves01",Player2)
+  !Name("vesine",Player2)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player2,PickUpItem("DDves01"))
+    ApplyDamage(Player2,15,ELECTRICITY)
+    ApplyDamage(Player2,5,COLD)
+END
+
+IF
+  HasItemEquiped("DDves01",Player3)
+  !Name("vesine",Player3)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player3,PickUpItem("DDves01"))
+    ApplyDamage(Player3,15,ELECTRICITY)
+    ApplyDamage(Player3,5,COLD)
+END
+
+IF
+  HasItemEquiped("DDves01",Player4)
+  !Name("vesine",Player4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player4,PickUpItem("DDves01"))
+    ApplyDamage(Player4,15,ELECTRICITY)
+    ApplyDamage(Player4,5,COLD)
+END
+
+IF
+  HasItemEquiped("DDves01",Player5)
+  !Name("vesine",Player5)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player5,PickUpItem("DDves01"))
+    ApplyDamage(Player5,15,ELECTRICITY)
+    ApplyDamage(Player5,5,COLD)
+END
+
+IF
+  HasItemEquiped("DDves01",Player6)
+  !Name("vesine",Player6)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,DropItem("DDves01",[-1.-1]))
+    ActionOverride(Player6,PickUpItem("DDves01"))
+    ApplyDamage(Player6,15,ELECTRICITY)
+    ApplyDamage(Player6,5,COLD)
+END
+
+IF
+  GlobalTimerExpired("riatwardback","GLOBAL")
+  GlobalGT("mageriatward","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("mageriatward","GLOBAL",0)
+END
+
+IF
+  InParty("robilard")  // ~Robillard~
+  Global("Robilardattack01","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Robattack01","GLOBAL",THREE_DAYS)
+    SetGlobal("Robilardattack01","GLOBAL",1)
+END
+
+IF
+  InParty("Robilard")  // ~Robillard~
+  Global("Robilardattack01","GLOBAL",1)
+  GlobalTimerExpired("Robattack01","GLOBAL")
+  AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("spdimndr",Player1)
+    Wait(2)
+    CreateCreatureObject("roborb01",Player1,0,0,0)  // ~Waterdeep Assassination Wizard~
+    SetGlobal("Robilardattack01","GLOBAL",2)
+END
+
+IF
+  Dead("roborb01")  // ~Waterdeep Assassination Wizard~
+  InParty("robilard")  // ~Robillard~
+  Global("Robilardattack01","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("RobilardAttack01","GLOBAL",3)
+    ActionOverride("robilard",StartDialogue("orbrob01",Player1))
+END
+
+IF
+  InParty("robilard")  // ~Robillard~
+  Global("Robilardattack01","GLOBAL",3)
+  LevelGT(Player1,16)
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("spplanar",Player1)
+    CreateVisualEffectObject("spportal",Player1)
+    Wait(1)
+    CreateVisualEffectObject("spdimndr",Player1)
+    Wait(1)
+    CreateCreatureObject("lv16rob1",Player1,0,0,0)  // ~Bregan D'aerth Assassin~
+    CreateCreatureObject("lv16rob2",Player1,0,0,0)  // ~Bregan D'aerth Assassin~
+    CreateCreatureObject("lv16rob3",Player1,0,0,0)  // ~Bregan D'aerth Assassin~
+    CreateCreatureObject("lv16rob4",Player1,0,0,0)  // ~Bregan D'aerth Assassin~
+    SetGlobal("Robilardattack01","GLOBAL",4)
+END
+
+IF
+  Dead("lv16rob4")  // ~Bregan D'aerth Assassin~
+  Dead("lv16rob3")  // ~Bregan D'aerth Assassin~
+  Dead("lv16rob2")  // ~Bregan D'aerth Assassin~
+  Dead("lv16rob1")  // ~Bregan D'aerth Assassin~
+  Global("Robilardattack01","GLOBAL",4)
+  !Dead("robilard")  // ~Robillard~
+THEN
+  RESPONSE #100
+    SetGlobal("Robilardattack01","GLOBAL",5)
+    ActionOverride("robilard",StartDialogue("drowrob1",Player1))
+END
+
+IF
+  Global("Robilardattack01","GLOBAL",5)
+  InParty("robilard")  // ~Robillard~
+THEN
+  RESPONSE #100
+    SetGlobalTimer("robishowdown","GLOBAL",FOUR_DAYS)
+    SetGlobal("Robilardattack01","GLOBAL",6)
+END
+
+IF
+  Global("Robilardattack01","GLOBAL",6)
+  GlobalTimerExpired("robishowdown","GLOBAL")
+  InParty("robilard")  // ~Robillard~
+THEN
+  RESPONSE #100
+    SetGlobal("Robilardattack01","GLOBAL",7)
+    StartCutSceneMode()
+    StartCutScene("robimov1")
+END
+
+IF
+  InParty("robilard")  // ~Robillard~
+  Dead("robend01")  // ~Host Tower Archmage~
+  Dead("robend02")  // ~Host Tower Archmage~
+  Global("Robilardattack01","GLOBAL",7)
+  !Dead("robilard")  // ~Robillard~
+THEN
+  RESPONSE #100
+    SetGlobal("Robilardattack01","GLOBAL",8)
+    ActionOverride("robilard",StartDialogue("endedrob",Player1))
+END
+
+IF
+  InParty("adario")  // adario
+  Global("adarioquests","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("adarioquesttalk","GLOBAL",ONE_DAY)
+    SetGlobal("adarioquests","GLOBAL",1)
+END
+
+IF
+  Global("adarioquests","GLOBAL",1)
+  InParty("adario")  // adario
+  !Dead("adario")  // adario
+  GlobalTimerExpired("adarioquesttalk","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("adarioquests","GLOBAL",2)
+    ActionOverride("adario",StartDialogue("darioQ01",Player1))
+END
+
+IF
+  Global("adarioquests","GLOBAL",6)
+  GlobalTimerExpired("kalvarasquest2","GLOBAL")
+  InParty("adario")  // adario
+  !Dead("adario")  // adario
+THEN
+  RESPONSE #100
+    SetGlobal("adarioquests","GLOBAL",7)
+    ActionOverride("adario",StartDialogue("darioQ03",Player1))
+END
+
+IF
+  InParty("adario")  // adario
+  !Dead("adario")  // adario
+  Global("adarioquests","GLOBAL",8)
+  GlobalTimerExpired("kalvarasquest2b","GLOBAL")
+  !Dead("kalvassa")  // ~Kalvassa~
+THEN
+  RESPONSE #100
+    SetGlobal("adarioquests","GLOBAL",9)
+    ActionOverride("adario",StartDialogue("darioQ04",Player1))
+END
+
+IF
+  Global("adarioquests","GLOBAL",11)
+  GlobalTimerExpired("kalvarasCrossed","GLOBAL")
+  InParty("adario")  // adario
+  !Dead("adario")  // adario
+THEN
+  RESPONSE #100
+    SetGlobal("adarioquests","GLOBAL",12)
+    CreateVisualEffectObject("spcloud2","adario")
+    CreateVisualEffectObject("spcloud2",Player1)
+    CreateVisualEffectObject("spcloud1",Player2)
+    CreateVisualEffectObject("spcloud2",Player3)
+    Wait(1)
+    CreateVisualEffectObject("spcloud1","adario")
+    CreateVisualEffectObject("spcloud2",Player1)
+    CreateVisualEffectObject("spcloud1",Player2)
+    CreateVisualEffectObject("spcloud2",Player3)
+    Wait(1)
+    CreateCreatureObjectOffset("dariomsg","adario",[150.0])
+END
+
+IF
+  Global("harperxzarfued","GLOBAL",0)
+  Global("ENDOFBG1","GLOBAL",2)
+  InParty("xzardd")  // xzardd
+  InParty("montydd")  // montaron
+THEN
+  RESPONSE #100
+    SetGlobalTimer("fuedxzar","GLOBAL",FIVE_DAYS)
+    SetGlobal("harperxzarfued","GLOBAL",1)
+END
+
+IF
+  Global("harperxzarfued","GLOBAL",1)
+  GlobalTimerExpired("fuedxzar","GLOBAL")
+  InParty("xzardd")  // xzardd
+  InParty("montydd")  // montaron
+  !Dead("xzardd")  // xzardd
+  !Dead("montydd")  // montaron
+  AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+    SetGlobal("harperxzarfued","GLOBAL",2)
+    CreateCreatureObjectDoor("harpass2",Player1,0,0,0)  // ~Lucette~
+END
+
+IF
+  Global("harperxzarfued","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("harperxzarfued","GLOBAL",4)
+    CreateCreatureObjectDoor("harpatt1",Player1,0,0,0)  // ~Harper~
+    CreateCreatureObjectDoor("harpatt2",Player1,0,0,0)  // ~Harper~
+    CreateCreatureObjectDoor("harpatt3",Player1,0,0,0)  // ~Harper~
+END
+
+IF
+  Global("harperxzarfued","GLOBAL",4)
+  Dead("harpatt1")  // ~Harper~
+  Dead("harpatt2")  // ~Harper~
+  Dead("harpatt3")  // ~Harper~
+  Dead("harpass2")  // ~Lucette~
+THEN
+  RESPONSE #100
+    AddXPObject("xzardd",150000)
+    AddXPObject("montydd",150000)
+    SetGlobal("harperxzarfued","GLOBAL",5)
+    ActionOverride("xzardd",StartDialogue("fuedendx",Player1))
+END
+
+IF
+  Global("ENDOFBG1","GLOBAL",2)
+  InParty("kagaindd")  // kagaindd
+  InParty("yeslicdd")  // yeslicdd
+  !Dead("kagaindd")  // kagaindd
+  !Dead("yeslicdd")  // yeslicdd
+THEN
+  RESPONSE #100
+    ActionOverride("yeslicdd",Attack("kagaindd"))
+    ActionOverride("kagaindd",Attack("yeslicdd"))
+END
+
+IF
+  InParty("xzardd")  // xzardd
+  !Dead("xzardd")  // xzardd
+  PartyHasItem("MISC5U")  // ~Montaron's Body~
+  Global("montyxzar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(2)
+    SetGlobal("montyxzar","GLOBAL",2)
+    ActionOverride("xzardd",StartDialogue("himonty1",Player1))
+END
+
+IF
+  Global("montyxzar","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("montyxzar","GLOBAL",4)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("montyras")
+END
+
+IF
+  Global("montyxzar","GLOBAL",5)
+THEN
+  RESPONSE #100
+    ActionOverride("xzardd",StartDialogue("montback",Player1))
+    SetGlobal("montyxzar","GLOBAL",6)
+END
+
+IF
+  Global("montyxzar","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("montyxzar","GLOBAL",7)
+    ActionOverride("montydd",StartDialogNoSet([PC]))
+END
+
+IF
+  Global("montbootwithxzar","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("montbootwithxzar","GLOBAL",2)
+    ActionOverride("xzardd",StartDialogue("xzarthxa",Player1))
+END
+
+IF
+  Global("montjoinwithxzar","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("montjoinwithxzar","GLOBAL",2)
+    ActionOverride("xzardd",StartDialogue("xzarthxb",Player1))
+END
+
+IF
+  Global("DarkestDayStart","GLOBAL",2)
+  AreaType(OUTDOOR)
+  Global("DarkestDay_DarkTimer","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Weather(RAIN)
+    SetGlobalTimer("CauseDarkness","GLOBAL",600)
+    SetGlobal("DarkestDay_DarkTimer","GLOBAL",1)
+  RESPONSE #100
+    Weather(SNOW)
+    SetGlobalTimer("CauseDarkness","GLOBAL",600)
+    SetGlobal("DarkestDay_DarkTimer","GLOBAL",1)
+END
+
+IF
+  GlobalTimerExpired("CauseDarkness","GLOBAL")
+  Global("DarkestDay_DarkTimer","GLOBAL",1)
+THEN
+  RESPONSE #100
+    Weather(RAIN)
+    SetGlobalTimer("CauseDarkness","GLOBAL",600)
+    SetGlobal("DarkestDay_DarkTimer","GLOBAL",0)
+  RESPONSE #100
+    Weather(SNOW)
+    SetGlobalTimer("CauseDarkness","GLOBAL",600)
+    SetGlobal("DarkestDay_DarkTimer","GLOBAL",0)
+END
+
+/*IF
+  Global("DarkestDaySickness","GLOBAL",1)
+  !GlobalTimerNotExpired("DarkestDaySickness","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("DarkestDaySickness","GLOBAL",2)
+    DisplayString(Protagonist,@10205)
+    ActionOverride(Protagonist,ApplySpellRES("SPPR746",Myself))
+END*/
+

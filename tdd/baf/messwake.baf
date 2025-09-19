@@ -1,0 +1,9 @@
+IF
+  Global("barbwake","DD2001",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("barbwake","DD2001",2)
+END
+

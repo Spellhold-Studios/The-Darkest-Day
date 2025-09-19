@@ -1,0 +1,19 @@
+IF
+  Global("pklichtrap","GLOBAL",0)
+  See([PC])
+  Range([PC],15)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+    SetGlobal("pklichtrap","GLOBAL",1)
+END
+
+IF
+  Global("pklichagain","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToPoint([1332.154])
+    DestroySelf()
+    SetGlobal("pklichagain","GLOBAL",2)
+END
+

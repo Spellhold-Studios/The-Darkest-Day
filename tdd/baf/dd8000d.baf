@@ -1,0 +1,25 @@
+IF
+  Global("dd8000d","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("dracoent")
+END
+
+IF
+  Global("dd8000d","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ScreenShake([1030.400],3)
+    CreateCreature("draggren",[553.439],4)
+    SetGlobal("dd8000d","GLOBAL",2)
+END
+
+IF
+  Global("greensnuffed","GLOBAL",1)
+THEN
+  RESPONSE #100
+    AddexperienceParty(250000)
+    SetGlobal("greensnuffed","GLOBAL",2)
+END
+

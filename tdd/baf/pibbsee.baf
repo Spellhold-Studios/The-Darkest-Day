@@ -1,0 +1,9 @@
+IF
+  Global("pibblesee","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("pibblesee","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+

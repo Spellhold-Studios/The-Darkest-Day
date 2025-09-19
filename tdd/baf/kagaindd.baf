@@ -1,0 +1,9 @@
+IF
+  InParty(Myself)
+  ReputationGT(Player1,18)
+THEN
+  RESPONSE #100
+    SetGlobal("KickedOut","LOCALS",2)
+    LeaveParty()
+END
+

@@ -1,0 +1,723 @@
+**************************************************
+CLABFI06 - MAGE HUNTER
+**************************************************
+AP_SPCLMH1  -  cpecific combination
+AP_SPCLMH2  -  Magic resistance bonus +50
+AP_SPCLMH3  -  item creation
+
+GA_SPMH701  -  Spell Turning
+
+**************************************************
+CLABFI07 - BLADESINGER
+**************************************************
+AP_SPBSHP   -  Max HP -2  ->>>>>>>>>>>>>>>>>>>>>>>>>-------------------> changed to AP_SPRHYTH4
+AP_SPBS1    -  THAC0 +2
+AP_SPBS7    -  specific combination
+AP_SPBS11   -  casting speed -2
+
+GA_SPBS6    -  Parry
+GA_SPBS14   -  Disarm
+
+**************************************************
+CLABFI08 - FROST DWELLER
+**************************************************
+AP_SPFR1    -  Cold resistanse bonus +25%
+AP_SPFR4    -  Immunity to Disease
+AP_SPFR5    -  Fire resistance -20% penalty
+
+GA_SPFR2    -  Frost Bite
+GA_SPFR3    -  Otiluke's Freezing Sphere
+
+**************************************************
+CLABFI09 - VAMPIRE HUNTER
+**************************************************
+AP_SPVAMH1  -  Immunity to Level drain
+
+GA_SPBS3    -  Create Shadows
+GA_SPVAMH2  -  Create Stake Weapon
+
+**************************************************
+CLABFI10 - MARKSMAN
+**************************************************
+GA_SPMARK1  -  create arrows
+GA_SPMARK2  -  create arrows
+GA_SPMARK3  -  create arrows
+
+**************************************************
+CLABFI11 - SELLSWORD
+**************************************************
+AP_SPSELL2  -  Slashing, Crushing resistance bonus +25%
+
+**************************************************
+CLABFI12 - GRUNT
+**************************************************
+AP_SPGR1  -  Max HP bonus +1
+AP_SPGR2  -  Crushing resistance +40%
+
+**************************************************
+CLABFI13 - PIT FIGHTER
+**************************************************
+AP_SPPIT1   -  Regeneration +8
+
+**************************************************
+CLABFI14 - DUERGAR WARRIOR
+**************************************************
+GA_SPDUER1  -  Offensive Rush
+
+**************************************************
+CLABFI15 - GUARDIAN
+**************************************************
+AP_SPGUAR1  -  +2 AC vs Missile weapons
+
+**************************************************
+CLABFI16 - RAVAGER
+**************************************************
+
+**************************************************
+CLABFI17 - DROW WARRIOR
+**************************************************
+
+**************************************************
+CLABFI18 - DROW BATTLE MONGER
+**************************************************
+
+**************************************************
+CLABFI19 - TROLL SLAYER
+**************************************************
+AP_TROLLSL1  -  create item
+
+**************************************************
+CLABFI20 - FOREST GNOME
+**************************************************
+GA_SPFG1  -  Taunt
+
+**************************************************
+CLABFI21 - BREACH GNOME
+**************************************************
+GA_SPBRE1  -  Breach
+GA_SPBRE2  -  Pierce Magic
+GA_SPBRE3  -  Spellstrike
+
+**************************************************
+CLABFI22 - HALFLING ARCHER
+**************************************************
+
+**************************************************
+CLABFI23 - TACTICIAN
+**************************************************
+GA_SPTACT1  -  Identify
+GA_SPTACT2  -  Detect Invisibility
+GA_SPTACT3  -  Clairvoyance
+GA_SPTACT4  -  Wizard Eye
+
+**************************************************
+CLABFI24 - BLADEMASTER
+**************************************************
+AP_SPBM1  -  THAC0 +1, damage +2
+
+GA_SPBM2  -  Blind Fighting
+
+**************************************************
+CLABFI25 - RHYTHM WARRIOR
+**************************************************
+AP_SPRHYTH2  -  Attack damage bonus +1 or +2
+AP_SPRHYTH3  -  Attack per round bonus +7
+AP_SPRHYTH4  -  Max HP bonus -2
+AP_SPRHYTH5  -  Attack per round bonus +2
+AP_SPRHYTH6  -  Attack per round bonus +8
+AP_SPRHYTH7  -  Attack per round bonus +3
+
+**************************************************
+CLABFI26 - VINDICATOR
+**************************************************
+AP_SPVIND1  -  +1 THAC0 vs Undead
+AP_SPVIND2  -  Protection from Energy Drain spell
+AP_SPVIND3  -  create item
+
+**************************************************
+CLABFI27 - HOLY FIGHTER
+**************************************************
+GA_SPHOL1  -  Prayer
+GA_SPHOL2  -  Cure Serious Wounds (casting speed differs from SPHEAL1)
+
+**************************************************
+CLABFI28 - ERINYES TIEFLING
+**************************************************
+AP_SPTIEF2  -  -2 AC vs slashing weapons
+AP_SPTIEF5  -  colorglow
+
+GA_SPTIEF1  -  Release Pheromones
+GA_SPTIEF3  -  Adapt STR
+GA_SPTIEF4  -  Adapt CON
+GA_SPTIEF6  -  Adapt DEX
+
+**************************************************
+CLABFI29 - AMAZON
+**************************************************
+GA_SPAMAZ01  -  First Strike
+
+
+
+**************************************************
+CLABBA05 - CHANTER
+**************************************************
+AP_SPBAX3  -  change Bard Song
+
+**************************************************
+CLABBA06 - CHRONICLER
+**************************************************
+AP_SPBAX1  -  change Bard Song
+
+GA_SPCRON1  -  True Seeing
+
+**************************************************
+CLABBA07 - MINSTREL
+**************************************************
+AP_SPMIN2  -  Pickpocket bonus +30%
+
+GA_SPMIN1  -  Minstrel Charm
+
+**************************************************
+CLABBA08 - TROUBADOUR
+**************************************************
+AP_SPBAX4  -  change Bard Song
+
+**************************************************
+CLABBA09 - BUCCANEER
+**************************************************
+
+**************************************************
+CLABBA10 - MUSICIAN
+**************************************************
+AP_SPBAX2  -  change Bard Song
+
+GA_SPMUS1  -  Deaf Tone
+GA_SPMUS2  -  Disruption Tone
+GA_SPMUS3  -  Charm Tone
+
+
+
+**************************************************
+CLABDR05 - SHAMAN
+**************************************************
+AP_SPSHAM3  -  Fire resistance +25%
+AP_SPSHAM4  -  Magic resistance +25%
+
+GA_SPSHAM1  -  Conjure Air Elemental
+GA_SPSHAM2  -  Conjure Fire Elemental
+
+**************************************************
+CLABDR06 - SHADOW MASTER
+**************************************************
+GA_SPSHAD1  -  Summon Shadow
+GA_SPSHAD2  -  Shadow Door
+GA_SPSHAD3  -  Shadow Armor
+
+**************************************************
+CLABDR07 - AERIAL DRUID
+**************************************************
+AP_SPAER1  -  specific bonuses
+
+GA_SPAER2  -  Elemental Morph
+
+**************************************************
+CLABDR08 - AQUATIC DRUID
+**************************************************
+AP_SPAQUA1  -  Cold Resist. +25%  -->>>>>>>>>>>>>>>>>>>>>>>>------------> AP_SPFR1
+AP_SPAQUQ3  -  specific prot. from spells
+
+GA_SPAQUA2  -  Water Guard
+
+**************************************************
+CLABDR09 - JUSTIFIER
+**************************************************
+
+**************************************************
+CLABDR10 - DREAM WALKER
+**************************************************
+AP_SPDREAM2 -  specific immunities
+
+GA_SPDREAM1  -  Domination
+
+
+
+
+**************************************************
+CLABPA06 - ANTI-PALADIN
+**************************************************
+AP_SPPAL9   -  all Saves +2
+AP_SPPAL10  -  immunity to Curse & Disease
+AP_SPPAL11  -  Change Alignment to Chaotic Evil
+AP_SPPAL14  -  create item
+AP_PALREP   -  set ANTIPAL script
+
+GA_SPPAL1   -  Cause Critical Wounds
+GA_SPPAL2   -  Dolorous Decay
+GA_SPPAL3   -  Dominate the Dead
+GA_SPPAL4   -  Dominate Monster
+GA_SPPAL5   -  Chromatic Orb
+GA_SPPAL6   -  Silence 15' Radius
+GA_SPPAL7   -  Animate Dead
+GA_SPPAL8   -  Magic Stone
+GA_SPPAL13  -  Withering Touch
+
+**************************************************
+CLABPA07 - CEREBRAL KNIGHT
+**************************************************
+AP_SPSAM2   -  disable Spell select button  -->>>>>>>>>>>>>>>---------->AP_SPCL234   (CLABRN07)
+
+GA_SPCERB1  -  Detect Illusion
+GA_SPCERB2  -  Feeblemind
+GA_SPCERB3  -  Chaotic Command
+GA_SPCERB4  -  Mind Blow
+
+**************************************************
+CLABPA08 - LORD
+**************************************************
+
+**************************************************
+CLABPA09 - DRAGON SLAYER
+**************************************************
+AP_SPDRAG  -  specific immunities
+AP_SPDRAG2 -  create item
+
+GA_SPDRAG1 -  Slayer Arrows
+
+**************************************************
+CLABPA10 - DEMON SLAYER
+**************************************************
+AP_SPDEM1  -  +3 to THAC0 and Damage vs Demonic
+AP_SPDEM2  -  prot. from Demon Fear
+AP_SPDEM3  -  -1 penalty to all Saves
+
+**************************************************
+CLABPA11 - SAURIAL PALADIN
+**************************************************
+
+**************************************************
+CLABPA12 - DARK KNIGHT
+**************************************************
+GA_SPDARKK1  -  Bane
+GA_SPDARKK2  -  Entropic Shield
+GA_SPDARKK3  -  Cloak of Bravery
+GA_SPDARKK4  -  Prayer     -->>>>>>>>>>>>>>>>>>------------------->SPHOL1
+GA_SPDARKK5  -  Call Upon Faith
+
+
+
+
+**************************************************
+CLABPR05 - HEALER
+**************************************************
+AP_SPHEAL4  -  Immunity to Poison, Disease
+AP_SPHEAL5  -  Save vs Death +2
+
+GA_SPHEAL1  -  Cure Serious Wounds
+GA_SPHEAL2  -  Cure Disease
+GA_SPHEAL3  -  Neutralize Poison    -->>>>>>>>>>>>>>-------->SPIN201
+GA_SPHEAL6  -  Heal
+
+**************************************************
+CLABPR06 - PRIEST OF SELUNE
+**************************************************
+AP_SPSEL1  -  Save vs Spell +2
+AP_SPSEL2  -  grants Infravision
+
+GA_SPSEL3  -  Conjure Moon Blade
+GA_SPSEL4  -  Moon Shield
+GA_SPSEL5  -  Moon Fire
+
+GA_SPSE201  -  Blur
+GA_SPSE212  -  Mirror Image
+GA_SPSE305  -  Haste
+GA_SPSE307  -  Invis 10' Radius
+GA_SPSE408  -  Stoneskin
+
+**************************************************
+CLABPR07 - PRIEST OF MALAR
+**************************************************
+GA_SPBS4   -  Magic Missile
+GA_SPMAL1  -  Agannazar's Scorcher
+GA_SPMAL2  -  Melf's Acid Arrow
+GA_SPMAL3  -  Slow
+GA_SPMAL4  -  Vampiric Touch
+GA_SPMAL5  -  Domination
+GA_SPMAL6  -  Beast Claw
+GA_SPMAL7  -  Blood Lust
+GA_SPMAL8  -  Rage
+
+**************************************************
+CLABPR08 - PRIEST OF AURIL
+**************************************************
+AP_SPAUR2  -  +50% to Cold and Magical Cold resistance
+
+GA_SPAUR1  -  Fire Shield (Blue)
+GA_SPAUR3  -  Ice Storm
+GA_SPAUR4  -  Frost Fingers
+GA_SPAUR6  -  Heart of Ice
+GA_SPAUR7  -  Cone of Cold
+
+**************************************************
+CLABPR09 - WARLOCK
+**************************************************
+AP_SPWAR7  -  Prot. from necromantic spells
+
+GA_SPWAR1  -  Ghoul Touch
+GA_SPWAR2  -  Contagion
+GA_SPWAR3  -  Hemophilia
+GA_SPWAR4  -  Monster Summoning III
+GA_SPWAR5  -  Black Death
+GA_SPWAR6  -  Summon Tanar'ri
+
+**************************************************
+CLABPR10 - PROTECTOR OF THE FAITH
+**************************************************
+
+**************************************************
+CLABPR11 - DROW PRIEST
+**************************************************
+GA_SPDROWC1  -  Visions Of Pain
+GA_SPDROWC2  -  Acid Bolt
+GA_SPDROWC3  -  Spider Spawn
+GA_SPDROWC4  -  Cloack of Gaer
+
+GA_SPSELF1   -  Dispel Magic   -------->>>>>>>>>>>>>>> SPCL231
+
+**************************************************
+CLABPR12 - PRIEST OF SILVANUS
+**************************************************
+AP_SPSYLV7  -  Regeneration +10
+
+GA_SPSYLV1  -  Fire Ward
+GA_SPSYLV2  -  Mulch
+GA_SPSYLV3  -  Barkskin
+GA_SPSYLV4  -  Good Berries
+GA_SPSYLV5  -  Protection From Electricity
+GA_SPSYLV6  -  Thorn Spray
+
+**************************************************
+CLABPR13 - PRIEST OF TYBBOCH
+**************************************************
+AP_SPTYB1  -  Max HP +6, immun. to Disease
+
+GA_SPTYB2  -  Dominate Undead
+GA_SPTYB4  -  Decay
+
+**************************************************
+CLABPR14 - PRIEST OF TEMPUS
+**************************************************
+GA_SPTPUS1  -  Hero's Feast
+GA_SPTPUS2  -  Reveal
+GA_SPTPUS3  -  Blade Curse
+GA_SPTPUS4  -  Create Holy Flail
+
+**************************************************
+CLABPR15 - PRIEST OF AMAUNATOR
+**************************************************
+AP_SPAMAUN2  -  spec. bonuses
+
+GA_SPAMAUN1  -  Amaunator's Uncertainty
+GA_SPAMAUN3  -  Sun Scepter
+GA_SPAMAUN4  -  Ignite
+
+**************************************************
+CLABPR16 - PRIEST OF SHAR
+**************************************************
+AP_SPSHAR3  - Save vs death +3
+AP_SPSHAR5  - THAC0 -1
+
+GA_SPSHAR1  -  Armour of Darkness
+GA_SPSHAR2  -  Creatures of Darkness
+GA_SPSHAR4  -  Dark Bolt
+
+**************************************************
+CLABPR17 - PRIEST OF TYR
+**************************************************
+GA_TYR1  -  Fire of Justice
+GA_TYR2  -  Boon of the God
+
+**************************************************
+CLABPR18 - PRIEST OF MYSTRA
+**************************************************
+AP_SPMYST14 - learn a bunch of spells
+
+
+
+
+
+**************************************************
+CLABRN06 - WILDERNESS PROTECTOR
+**************************************************
+GA_SPWILD1  -  Call Allies
+GA_SPWILD2  -  Monster Summoning IV
+GA_SPWILD3  -  Monster Summoning V
+GA_SPWILD4  -  Monster Summoning VI
+
+**************************************************
+CLABRN07 - SAMURAI
+**************************************************
+AP_SPSAM1  -  +4 AC vs. missiles
+
+GA_SPSAM3  -  Kuatoray Technique
+
+**************************************************
+CLABRN08 - SHADOW ELF
+**************************************************
+GA_SPSELF2  -  Cure Disease       --->>>>>>>>>>>>>>>>>>>>>>--------->SPHEAL2
+GA_SPSELF3  -  Cure Light Wounds  --->>>>>>>>>>>>>>>>>>>>>>--------->SPIN101
+GA_SPSELF4  -  Fireball
+GA_SPSELF5  -  Protection From The Elements
+GA_SPSELF6  -  Resurrection
+
+**************************************************
+CLABRN09 - DROW RANGER
+**************************************************
+AP_SPDROWR1  -  Magic resistance +5%
+AP_SPDROWR4  -  item colors
+
+GA_SPDROWR2  -  Know Alignment
+GA_SPDROWR3  -  Burning Hands
+
+**************************************************
+CLABRN10 - TRACKER
+**************************************************
+GA_SPTRACK1  -  Web
+GA_SPTRACK2  -  Hold Person
+GA_SPTRACK3  -  Hold Undead
+GA_SPTRACK4  -  Stun Shot
+
+**************************************************
+CLABRN11 - GIANT REAPER
+**************************************************
+AP_SPGIANT1  -  specific
+AP_SPGIANT2  -  Casting Speed -4
+
+**************************************************
+CLABRN12 - SLAYER OF THE EYE
+**************************************************
+AP_SPEYE2  -  Stealth -30%
+AP_SPEYE3  -  Protection from Imprisonment
+
+GA_SPEYE1  -  Elder Parry
+
+**************************************************
+CLABRN13 - ELVEN FOREST WARRIOR
+**************************************************
+GA_SPFOR1  -  Totem Bear
+GA_SPFOR2  -  Totem Coyote
+GA_SPFOR3  -  Totem Eagle
+GA_SPFOR4  -  Totem Fox
+GA_SPFOR5  -  Totem Horse
+GA_SPFOR6  -  Totem Squirrel
+GA_SPFOR7  -  Totem Tortoise
+
+**************************************************
+CLABRN14 - SLINGER
+**************************************************
+GA_SPSLING1  -  Create Bullets
+
+
+
+
+
+**************************************************
+CLABTH05 - NINJA
+**************************************************
+AP_SPNINJ4  -  THAC0 +1
+
+GA_SPNINJ1  -  Harm Evasion
+GA_SPNIN12  -  Mirror Image   ----->>>>>>>>>>>>>>>>>>>>-->>>GA_SPSE212
+
+**************************************************
+CLABTH06 - KNIFE BEARER
+**************************************************
+
+**************************************************
+CLABTH07 - SNIPER
+**************************************************
+GA_SPSNIP1  -  Venom Shot
+
+**************************************************
+CLABTH08 - SVIRFNEBLIN
+**************************************************
+AP_SPSVIRF3  -  +2 to Base AC
+
+GA_SPSVIRF1  -  Mirror Image   ----->>>>>>>>>>>>>>>>>>>>-->>>GA_SPSE212
+GA_SPSVIRF2  -  Mass Invisibility
+GA_SPSVIRF4  -  Blur           ----->>>>>>>>>>>>>>>>>>>>-->>>GA_SPSE201
+GA_SPSVIRF5  -  Blindness
+
+**************************************************
+CLABTH09 - DROW ASSASSIN
+**************************************************
+GA_SPDROWA1  -  Create Assasin Darts
+GA_SPTHCR    -  Crippling Strike
+
+**************************************************
+CLABTH10 - BURGLAR
+**************************************************
+AP_SPBURG1  -  Pickpocket +50%
+
+GA_SPBURG2  -  Deep Sleep
+
+**************************************************
+CLABTH11 - PLANEWALKER THIEF
+**************************************************
+GA_SPPLAN1  -  Call Outer Plain Ally
+
+**************************************************
+CLABTH12 - THUG
+**************************************************
+AP_SPTHUG1  -  Max HP bonus +10
+
+**************************************************
+CLABTH13 - HUNTSMAN
+**************************************************
+
+**************************************************
+CLABTH14 - DELVER
+**************************************************
+AP_SPDELV1  -  MAx HP bonus +2
+AP_SPDELV5  -  Pickpocket = 50%
+
+GA_SPDELV2  -  Bind Wounds
+GA_SPDELV3  -  Identify        ----->>>>>>>>>>>>>>>>>>>>-->>>GA_SPTACT1
+GA_SPBS5    -  Breach          ----->>>>>>>>>>>>>>>>>>>>-->>>GA_SPBRE1
+
+**************************************************
+CLABTH15 - MERCHANT
+**************************************************
+AP_SPMERC3  -  create item
+
+GA_SPMERC1  -  Barter
+GA_SPMERC2  -  Awareness
+
+**************************************************
+CLABTH16 - SWINDLER
+**************************************************
+AP_SPSWIND2  -  specific
+
+GA_SPSWIND1  - Haste
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+*****************************************************
+BASE INNATE/KIT STATS SPELLS SET
+*****************************************************
+/////////////////////////////////////////////////////
+AP_SPCL122  -  Missile THAC0 and damage bonus +1
+AP_SPCL131  -  Magic resistance bonus +1
+AP_SPCL133  -  Casting failure to target (SPCL132.EFF)
+AP_SPCL141  -  Attack damage bonus +1, THAC0 +1
+AP_SPCL142  -  AC bonus +2 (all weap.)
+AP_SPCL143  -  Increase attack speed +1
+AP_SPCL151  -  Movementrate bonus +2
+AP_SPCL153  -  +10% resist. bonus Slashing, Crushing, Piercing, Missile
+AP_SPCL154  -  +5%  resist. bonus Slashing, Crushing, Piercing, Missile
+
+AP_SPCL221  -  Immunity to Charm, Poison, Break morale, Panic; Dragons and Demons +3 to hit and damage, Acid and Fire res. +20%
+AP_SPCL233b -  Immunity to Charm and Hold
+AP_SPCL234  -  Disable spellcasting (button Spell select)
+AP_SPCL235  -  Disable Turn undead button
+AP_SPCL241  -  Undead damage and attack bonus +3
+AP_SPCL242  -  Immunity to Hold and Level drain
+
+AP_SPCL331  -  +20% to Stealth and Hide in Shadows
+AP_SPCL332  -  Backstab bonus +1
+AP_SPCL341  -  +15% to Stealth and Hide in Shadows
+AP_SPCL351  -  Disable Stealth button
+
+AP_SPCL417  -  Set Trap bonus +15%
+AP_SPCL421  -  Attack damage bonus +1, THAC0 +1 (HITPLUS1.EFF)
+AP_SPCL441  -  Bonus to AC +1  (all weaps)
+
+AP_SPCL541  -  Attack damage bonus +1, THAC0 +1 (HITPLUS1.EFF)
+AP_SPCL542  -  Change bard song effect (SPCL542A.SPL)
+
+AP_SPCL642  -  -2 to STR and CON
+
+AP_SPCL751  -  Change bard song effect (SPCL751A.SPL)
+
+AP_SPCL812  -  Movementrate bonus +2
+AP_SPCL813  -  Movementrate bonus +1
+AP_SPCL814  -  Immunity to Disease, Slow, Haste
+AP_SPCL816  -  Increase attack speed factor +1
+AP_SPCL817  -  Immunity to Charm
+AP_SPCL818  -  Immunity to Poison
+AP_SPCL819  -  +3% Magic resistance bonus
+AP_SPCL821  -  Immunity to non-magical weapons
+
+AP_SPCL924  -  Protection from poison
+AP_SPCL925  -  +10% resistance to Acid, Fire (and magical), Cold (and magical), Electricity
+AP_SPCL926  -  +10% resistance to Acid, Fire (and magical), Cold (and magical), Electricity
+AP_SPCL927  -  +10% resistance to Acid, Fire (and magical), Cold (and magical), Electricity
+AP_SPCL931  -  create Holy symbol of Lathander
+AP_SPCL932  -  create Holy symbol of Helm
+AP_SPCL933  -  create Holy symbol of Talos
+AP_SPCL934  -  create one of the above 3 items
+
+************************************************************************************************
+
+GA_SPCL121  -  Called Shot
+GA_SPCL144  -  Kai
+GA_SPCL152  -  Barbarian Rage
+
+GA_SPCL211  -  Lay On Hands
+GA_SPCL212  -  Detect Evil
+GA_SPCL213  -  Protection From Evil
+GA_SPCL222  -  Remove Fear
+GA_SPCL231  -  Dispel Magic
+GA_SPCL232  -  True Sight
+
+GA_SPCL311  -  Charm Animal
+GA_SPCL321  -  Enrage
+GA_SPCL342  -  Find Familiar
+
+GA_SPCL412  -  Set Snare
+GA_SPCL414  -  Set Special Snare
+GA_SPCL423  -  Poison Weapon
+
+GA_SPCL521  -  Offensive spin
+GA_SPCL522  -  Defensive spin
+
+GA_SPCL611  -  Shapeshifts Brown Bear
+GA_SPCL612  -  Shapeshifts Wolf
+GA_SPCL613  -  Shapeshifts Black Bear
+GA_SPCL621  -  Summon Spirit Animals
+GA_SPCL632  -  Shapeshifts Spider
+GA_SPCL633  -  Shapeshifts Baby Wyvern
+GA_SPCL634  -  Shapeshifts Fire Salamander
+GA_SPCL643  -  Shapeshifts Werewolf
+GA_SPCL644  -  Shapeshifts Greater Werewolf
+
+GA_SPCL721  -  Storm Shield
+GA_SPCL722  -  Lightning Bolt
+GA_SPCL731  -  Seeking Sword
+GA_SPCL732  -  True Sight
+GA_SPCL741  -  Boon Of Lathander
+GA_SPCL742  -  Hold Undead
+
+GA_SPCL811  -  Stunning Blow
+GA_SPCL815  -  Lay On Hands
+GA_SPCL820  -  Quivering Palm
+
+************************************************************************************************
+
+GA_SPDR101  -  Chromatic Orb
+GA_SPDR201  -  Web
+GA_SPDR301  -  Lightning Bolt
+GA_SPDR401  -  Improved Invisibility
+GA_SPDR501  -  Chaos
+GA_SPDR601  -  Chain Lightning
+
+GA_SPRA301  -  Haste
+GA_SPRA302  -  Minor Spell Deflection
+GA_SPRA303  -  Protection From Normal Missiles
+GA_SPRA304  -  Animal Summoning I
+GA_SPRA305  -  Animal Summoning II
+GA_SPRA306  -  Animal Summoning III
+

@@ -1,0 +1,74 @@
+IF
+  Global("bansheelair1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheelair1","GLOBAL",1)
+    CreateCreature("baninvi",[947.774],4)
+END
+
+IF
+  Global("bansheelair2","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheelair2","GLOBAL",3)
+    CreateVisualEffect("spportal",[1325.968])
+    CreateCreature("banshee1",[1325.968],4)
+END
+
+IF
+  Global("bansheelair2","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheelair2","GLOBAL",4)
+    ClearAllActions()
+    ActionOverride("banshee1",StartDialogue("banshee1",Player1))
+END
+
+IF
+  Global("bansheedie","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheedie","GLOBAL",2)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("bandie")
+END
+
+IF
+  Global("bansheeend","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheeend","GLOBAL",2)
+    ActionOverride("banshee1",StartDialogue("banded",Player1))
+END
+
+IF
+  Global("Bansheeyield","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Bansheeyield","GLOBAL",2)
+    ApplySpell("banshee1",WIZARD_FINGER_OF_DEATH_IGNORE_RESISTANCE)
+END
+
+IF
+  Global("Bansheeyield","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("Bansheeyield","GLOBAL",3)
+    AddexperienceParty(145000)
+END
+
+IF
+  Global("Bansheeyield","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("bansheetalos","GLOBAL",1)
+    CreateVisualEffect("FIRE_2",[1300.828])
+    CreateVisualEffect("FIRE_2",[1254.909])
+    CreateVisualEffect("FIRE_2",[1144.914])
+    CreateVisualEffect("FIRE_2",[1086.855])
+    CreateVisualEffect("FIRE_2",[1114.781])
+    CreateVisualEffect("FIRE_2",[1211.767])
+    CreateVisualEffect("FIRE_2",[1179.856])
+END
+

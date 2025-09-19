@@ -1,0 +1,29 @@
+IF
+  Global("Been_In_Party","LOCALS",0)
+  InParty(Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("Been_In_Party","LOCALS",1)
+END
+
+IF
+  !InParty(Myself)
+  Global("Leave_Party_Dialog","LOCALS",0)
+  Global("KickedOut","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Leave_Party_Dialog","LOCALS",1)
+END
+
+IF
+  !InParty(Myself)
+  Global("Been_In_Party","LOCALS",1)
+  Global("KickedOut","LOCALS",0)
+  Global("Leave_Party_Dialog","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Leave_Party_Dialog","LOCALS",1)
+    SetDialogue("ADARIOP")
+    Dialog(Player1)
+END
+

@@ -1,0 +1,11 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		AmbientActivate("AM0902L2",TRUE)
+		AmbientActivate("AM0902L4",TRUE)
+		AmbientActivate("AM0902L1",TRUE)
+		AmbientActivate("AM0902L3",TRUE)
+END
+
+

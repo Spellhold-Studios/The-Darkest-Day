@@ -1,0 +1,18 @@
+IF
+  Global("dockprizsee","GLOBAL",0)
+  See([PC])
+  Range([PC],15)
+THEN
+  RESPONSE #100
+    StartDialogue("dockprix",Player1)
+    SetGlobal("dockprizsee","GLOBAL",1)
+END
+
+IF
+  Global("artyinfz","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("artyinfz","GLOBAL",2)
+    EscapeArea()
+END
+

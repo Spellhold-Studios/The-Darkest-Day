@@ -1,0 +1,9 @@
+IF
+  Global("fleeinvi","GLOBAL",0)
+  See([PC])
+  Range([PC],25)
+THEN
+  RESPONSE #100
+    SetGlobal("fleeinvi","GLOBAL",1)
+END
+

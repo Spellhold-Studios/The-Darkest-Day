@@ -1,0 +1,21 @@
+IF
+  Global("creature","dd9006",0)
+THEN
+  RESPONSE #100
+    CreateCreature("knord",[1479.1109],4)
+    SetGlobal("creature","dd9006",1)
+END
+
+IF
+  Global("knorddead","GLOBAL",0)
+  Dead("knord")
+THEN
+  RESPONSE #100
+    SetGlobal("knorddead","GLOBAL",1)
+    StartCutSceneMode()
+    Wait(5)
+    FadeToColor([0.0],0)
+    Wait(3)
+    StartCutScene("knordmve")
+END
+

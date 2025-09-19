@@ -1,0 +1,51 @@
+IF
+  Global("creature","dd7003",0)
+THEN
+  RESPONSE #100
+    CreateCreature("mistcd01",[936.1452],4)
+    CreateCreature("mistcd01",[1208.1441],4)
+    CreateCreature("mistcd01",[1486.1344],4)
+    CreateCreature("mistcd01",[1651.926],4)
+    CreateCreature("mistcd01",[1607.864],4)
+    CreateCreature("mistcd01",[1827.672],4)
+    CreateCreature("mistcd01",[1893.634],4)
+    CreateCreature("mistcd01",[796.422],4)
+    SetGlobal("creature","dd7003",1)
+END
+
+IF
+  PartyHasItem("orgobody")
+  Global("hasorgobody","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("orgoinvi",[967.1196],1)
+    SetGlobal("hasorgobody","GLOBAL",1)
+END
+
+IF
+  Global("orgoinvisee","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("orgoinvisee","GLOBAL",2)
+    StartCutSceneMode()
+    StartCutScene("cutorgo1")
+END
+
+IF
+  Global("riatavinblitz","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("riatavinblitz","GLOBAL",2)
+    CreateVisualEffect("spplanar",[951.1226])
+    Wait(1)
+    CreateCreature("dembal02",[951.1226],4)
+END
+
+IF
+  Global("add_map_notes","DD7003",0)
+THEN
+  RESPONSE #100
+    AddMapNote([1471.234],@10006)
+    SetGlobal("add_map_notes","DD7003",1)
+END
+
